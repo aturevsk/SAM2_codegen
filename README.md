@@ -6,7 +6,7 @@ Two complementary approaches are compared:
 | | Approach 1 | Approach 2 |
 |---|---|---|
 | **Method** | Manual architecture-aware C++ | MATLAB Coder → `loadPyTorchExportedProgram` → MLIR/TOSA → C++ |
-| **Status** | Runs (numerical accuracy in progress) | Scripts ready; blocked by license expiry |
+| **Status** | Runs (numerical accuracy in progress) | Code generation complete |
 | **Inference** | ~8.2 s (MacBook Pro, CPU) | ~1.5 s estimated |
 | **Code** | ~1300 lines hand-written | ~50K lines generated |
 
@@ -78,8 +78,7 @@ cd matlab_coder
 run('run_codegen.m')   % generates C++ in matlab_coder/codegen/
 ```
 
-> **Note**: MATLAB R2026a trial license expired before codegen could be executed in this project.
-> All scripts are correct and ready to run with a valid license.
+> Code generation has been successfully executed with an updated MATLAB license.
 
 ## Architecture Overview
 
@@ -130,7 +129,9 @@ See [`SAM2_Deployment_Report.pdf`](SAM2_Deployment_Report.pdf) for the full tech
 
 ## Web Application
 
-Open [`webapp/index.html`](webapp/index.html) in any browser — no server required.
+**Live app**: [https://aturevsk.github.io/SAM2_codegen/webapp/index.html](https://aturevsk.github.io/SAM2_codegen/webapp/index.html)
+
+Or open [`webapp/index.html`](webapp/index.html) locally in any browser — no server required.
 6 tabs: Overview · Architecture · Approach 1 · Approach 2 · Benchmark · Weight Explorer
 
 ---
