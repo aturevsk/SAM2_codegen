@@ -130,7 +130,7 @@ See [`SAM2_Deployment_Report.pdf`](SAM2_Deployment_Report.pdf) for the full tech
 
 ## Web Application
 
-**Live app**: [https://aturevsk.github.io/sam2_codegen/webapp/index.html](https://aturevsk.github.io/sam2_codegen/webapp/index.html)
+**Live app**: [https://aturevsk.github.io/SAM2_codegen/webapp/index.html](https://aturevsk.github.io/SAM2_codegen/webapp/index.html)
 
 Or open [`webapp/index.html`](webapp/index.html) locally in any browser — no server required.
 6 tabs: Overview · Architecture · Approach 1 · Approach 2 · Benchmark · Weight Explorer
