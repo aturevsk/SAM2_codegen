@@ -1,0 +1,31 @@
+# Binary weight files (too large for GitHub — extract locally with reference/extract_weights.py)
+weights/
+*.bin
+*.pt2
+*.onnx
+
+# MATLAB build artifacts
+matlab_coder/codegen/
+matlab_coder/outDir/
+matlab_coder/codegen_error.mat
+matlab_coder/codegen_summary.mat
+matlab_coder/*.mex*
+
+# C++ build artifacts
+manual_cpp/build/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Reference I/O test vectors (large, regenerate with gen_reference.py)
+reference/ref_input_image.bin
+reference/ref_input_coords.bin
+reference/ref_input_labels.bin
+reference/ref_output_0.bin
+reference/ref_output_1.bin
+reference/manual_cpp_output_*.bin

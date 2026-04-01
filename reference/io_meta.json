@@ -1,0 +1,41 @@
+{
+  "inputs": {
+    "image_hwc_u8": {
+      "shape": [
+        1200,
+        1800,
+        3
+      ],
+      "dtype": "uint8"
+    },
+    "point_coords": {
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float32"
+    },
+    "point_labels": {
+      "shape": [
+        1
+      ],
+      "dtype": "int32"
+    }
+  },
+  "outputs": [
+    {
+      "shape": [
+        3,
+        1200,
+        1800
+      ],
+      "dtype": "float32"
+    },
+    {
+      "shape": [
+        3
+      ],
+      "dtype": "float32"
+    }
+  ]
+}
