@@ -4,12 +4,22 @@ weights/
 *.pt2
 *.onnx
 
-# MATLAB build artifacts
+# MATLAB build artifacts — logs and temp
 matlab_coder/codegen/
-matlab_coder/outDir/
 matlab_coder/codegen_error.mat
 matlab_coder/codegen_summary.mat
 matlab_coder/*.mex*
+matlab_coder/*_bg.log
+matlab_coder/benchmark_status.txt
+matlab_coder/codegen_status.txt
+matlab_coder/timing_status.txt
+matlab_coder/verify_results.mat
+matlab_coder/cpp_bench_results.txt
+# outDir tracked (generated C++ sources), but skip .bin weight files and .o/.a build artifacts
+matlab_coder/outDir/*.bin
+matlab_coder/outDir/*.o
+matlab_coder/outDir/*.a
+matlab_coder/outDir/*.mex*
 
 # C++ build artifacts
 manual_cpp/build/
